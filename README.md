@@ -17,24 +17,24 @@ Prenez votre ordinateur, on va coder ensemble !
 ### Voir la présentation sur son ordinateur
 
 1. Installer [Node.js](http://nodejs.org/) (>= 4.0.0)
-2. Cloner le repository
-```
+1. Cloner le repository
+```sh
 git clone git@github.com:guillaumecabanel/ruby_101.git
 ```
 
-3. Aller dans le dossier ruby_101
-```
+1. Aller dans le dossier ruby_101
+```sh
 cd ruby_101
 ```
 
-4. Installer les dépendances
-```
+1. Installer les dépendances
+```sh
 npm install
 ```
 
-5. Lancer le serveur local
-```
+1. Lancer le serveur local
+```sh
 npm start
 ```
 
-6. Ouvrir [http://localhost:8000](http://localhost:8000) pour voir la présentation
+1. Ouvrir [http://localhost:8000](http://localhost:8000) pour voir la présentation
