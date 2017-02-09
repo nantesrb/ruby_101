@@ -21,16 +21,20 @@ Prenez votre ordinateur, on va coder ensemble !
 ```
 git clone git@github.com:guillaumecabanel/ruby_101.git
 ```
+
 3. Aller dans le dossier ruby_101
 ```
 cd ruby_101
 ```
+
 4. Installer les dépendances
 ```
 npm install
 ```
+
 5. Lancer le serveur local
 ```
 npm start
 ```
+
 6. Ouvrir [http://localhost:8000](http://localhost:8000) pour voir la présentation
