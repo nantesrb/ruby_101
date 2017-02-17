@@ -3,13 +3,18 @@ img{
   border: none !important;
 }
 
-blockquote{
+blockquote {
   text-align: left;
   box-shadow: none !important;
   border-left: 15px solid #788E95 !important;
   padding-left: 20px !important;
+  font-size: 70% !important;
 }
 
 h4{
   text-align: left;
+}
+
+td{
+  border: none !important;
 }

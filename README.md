@@ -41,4 +41,4 @@ Présentation créée avec [Reveal.js](https://github.com/hakimel/reveal.js)
 
 1.  Ouvrir [http://localhost:8000](http://localhost:8000) pour voir la présentation
 
-1.  Appuyer sur `s` pour lancer le mode Speaker.
+1.  Appuyer sur `s` pour lancer le mode Speaker
