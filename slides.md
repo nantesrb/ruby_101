@@ -1,7 +1,13 @@
-# La programmation avec Ruby
+<!-- .slide: data-background-image="images/le_wagon.png" -->
 
 notes:
 Pierre : Présentation du Wagon
+
+---
+
+# La programmation avec Ruby
+## 🖥
+
 
 ---
 
@@ -10,6 +16,7 @@ Pierre : Présentation du Wagon
 ---
 
 # Hello, World!
+## 👋
 ```ruby
 puts "Bonjour Nantes !"
 ```
@@ -17,28 +24,31 @@ puts "Bonjour Nantes !"
 ---
 
 # Objets
-`"Double rainbow"`
-_String_ <!-- .element: class="fragment" data-fragment-index="1" -->
+`"Double rainbow 🌈🌈"`
+_**String**_ <!-- .element: class="fragment" data-fragment-index="1" -->
 
 `42`
-_Fixnum_ <!-- .element: class="fragment" data-fragment-index="2" -->
+_**Fixnum**_ <!-- .element: class="fragment" data-fragment-index="2" -->
 
 `3.14159`
-_Float_ <!-- .element: class="fragment" data-fragment-index="3" -->
+_**Float**_ <!-- .element: class="fragment" data-fragment-index="3" -->
 
-`["Unicorn", "Kitten", "Butterfly"]`
-_Array_ <!-- .element: class="fragment" data-fragment-index="4" -->
+`["Unicorn 🦄", "Kitten 🐈", "Bug 🐛"]`
+_**Array**_ <!-- .element: class="fragment" data-fragment-index="4" -->
 
 `true`
-_TrueClass_ <!-- .element: class="fragment" data-fragment-index="5" -->
+_**TrueClass**_ <!-- .element: class="fragment" data-fragment-index="5" -->
 
 `false`
-_FalseClass_ <!-- .element: class="fragment" data-fragment-index="6" -->
+_**FalseClass**_ <!-- .element: class="fragment" data-fragment-index="6" -->
+
+Et quelques autres... <!-- .element: class="fragment" data-fragment-index="7" -->
 
 ---
 
 # Variables
-Variable = boite
+Variable = boite <!-- .element: class="fragment" data-fragment-index="1" -->
+🎁
 
 ```ruby
 year = 2017
@@ -47,7 +57,7 @@ puts = "We are in #{year}"
 year = year + 1
 puts = "Happy new year! It's now #{year}"
 ```
-<!-- .element: class="fragment" data-fragment-index="1" -->
+<!-- .element: class="fragment" data-fragment-index="2" -->
 
 notes:
 
@@ -57,12 +67,12 @@ notes:
 
 vvv
 
-## Conditions
+## Conditions ✅ ❎
 
 
 vvv
 
-## Boucles
+## Boucles 🔁
 
 ---
 
@@ -71,47 +81,16 @@ vvv
 ---
 
 # LiveCode
+# ⌨
+
+---
+
+# Questions
+# 💬❔
 
 ---
 
 
-
-# Title
-### Subheading
-
-Notes: Examples notes
-
----
-
-## Point 1
-
-> Important quote here
-
-------
-
-## Point 1 -> Subpoint A
-
-* Subpoint
-* Subpoint
-
-Notes: Remmeber to say something funny here...
-
-------
-
-## Point 1 -> Subpoint B
-
-Hello point 1, subpoint b
-
----
-
-## Point 2
-
-These bullets appear one at a time
-
-* Fragment a <!-- .element: class="fragment" data-fragment-index="1" -->
-* Fragment b <!-- .element: class="fragment" data-fragment-index="2" -->
-
----
 
 <!-- .slide: data-background="#81ceff" -->
 ## Point 3
