@@ -55,24 +55,6 @@ puts "Bonjour Nantes !"
 
 ---
 
-## Paradigme 👴🏻☝
-
-&nbsp;
-
-"Tout est objet."
-
-notes: Mais qu'est-ce qu'un objet ?
-
-vvv
-
-## Objet ?
-
-<!-- TODO -->
-
-notes: Un objet est une entité à qui l'on peut apprendre à faire des choses.
-
----
-
 ## Types 🔖
 
 <table>
@@ -149,15 +131,23 @@ notes:
 &nbsp;
 
 Arranger la logique par _boite noire_
-
 ```ruby
-def tomorrow
-  tomorrow_date = Date.today + 1
-  return tomorrow_date.strftime("%B %d")
+def hello_world
+  puts "Bonjour tout le monde !"
 end
 
-puts tomorrow
+hello_world
 ```
+
+
+```ruby
+def grettings(name)
+  puts "Bonjour " + name
+end
+
+grettings("Bob")
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
@@ -224,6 +214,24 @@ puts counter
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 notes: Faire tourner les boucles au tableau
+
+---
+
+## Paradigme 👴🏻☝
+
+&nbsp;
+
+"Tout est objet."
+
+notes: Mais qu'est-ce qu'un objet ?
+
+vvv
+
+## Objet ?
+
+<!-- TODO -->
+
+notes: Un objet est une entité à qui l'on peut apprendre à faire des choses.
 
 ---
 
