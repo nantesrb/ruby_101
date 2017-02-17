@@ -16,6 +16,8 @@ Prenez votre ordinateur, on va coder ensemble !
 
 ### Voir la présentation sur son ordinateur
 
+Présentation créée avec [Reveal.js](https://github.com/hakimel/reveal.js)
+
 1.  Installer [Node.js](http://nodejs.org/) (>= 4.0.0)
 1.  Cloner le repository
     ```sh
@@ -38,3 +40,5 @@ Prenez votre ordinateur, on va coder ensemble !
     ```
 
 1.  Ouvrir [http://localhost:8000](http://localhost:8000) pour voir la présentation
+
+1.  Appuyer sur `s` pour lancer le mode Speaker.
