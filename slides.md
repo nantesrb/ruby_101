@@ -65,7 +65,7 @@ notes: Mais qu'est-ce qu'un objet ?
 
 vvv
 
-## Objet
+## Objet ?
 
 <!-- TODO -->
 
@@ -198,23 +198,30 @@ vvv
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```ruby
-while condition
-  puts "S'affiche tant que la condition est vrai"
+counter = 1
+
+while counter < 20
+  puts counter
+  counter = counter + 1
 end
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
-
-&nbsp;
 
 #### Until
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ```ruby
-until condition
-  puts "S'affiche jusqu'à ce que la condition soit vrai"
+counter = 23
+
+until counter % 10 == 0
+  counter = counter + 1
 end
+puts counter
 ```
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
+⚠ Attention aux boucles infinies ! ⚠
+<!-- .element: class="fragment" data-fragment-index="3" -->
 
 notes: Faire tourner les boucles au tableau
 
@@ -224,12 +231,22 @@ notes: Faire tourner les boucles au tableau
 # ⌨
 
 <!-- Use a new link for the free version -->
-🔗 `https://coderpad.io/HC3RY7MA`
+🔗 https://coderpad.io/HC3RY7MA
+
+<!-- tutorialspoint.com : https://goo.gl/z9kDe6 -->
 
 ---
 
 # Questions
 # 💬❔
+
+vvv
+
+## Disponible sur GitHub 🙏
+
+&nbsp;
+
+🔗 https://github.com/guillaumecabanel/ruby_101
 
 ---
 
