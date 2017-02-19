@@ -141,11 +141,11 @@ hello_world
 
 
 ```ruby
-def grettings(name)
+def greetings(name)
   puts "Bonjour " + name
 end
 
-grettings("Bob")
+greetings("Bob")
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -168,7 +168,7 @@ end
 &nbsp;
 
 ```ruby
-weather = "It's sunny "
+weather = "It's sunny"
 
 if weather == "It's raining"
   puts "Take your umbrella 🌂"
