@@ -185,7 +185,6 @@ vvv
 ## Boucles 🔁
 
 #### While
-<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```ruby
 counter = 1
@@ -195,7 +194,6 @@ while counter < 20
   counter = counter + 1
 end
 ```
-<!-- .element: class="fragment" data-fragment-index="1" -->
 
 #### Until
 <!-- .element: class="fragment" data-fragment-index="2" -->
@@ -214,6 +212,18 @@ puts counter
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 notes: Faire tourner les boucles au tableau
+
+vvv
+
+### Boucles (suite) 🔁
+
+#### For
+
+```ruby
+for number in [1..10]
+  puts number
+end
+```
 
 ---
 
@@ -295,6 +305,50 @@ def mutiplication_table(number)
 end
 ```
 <!-- .element: class="fragment" data-fragment-index="3" -->
+
+vvv
+
+### Jeux (suite) 🎮
+
+#### 👉 Autoriser l'accès grâce à un mot de passe
+```ruby
+grant_access("123456")
+# => "Accès refusé"
+
+grant_access("Unicorn42")
+# => "Accès autorisé"
+```
+
+```ruby
+# Indice
+def grant_access(given_password)
+  real_password = "Unicorn42"
+  ____
+    puts "Accès autorisé"
+  ____
+    puts "Accès refusé"
+  ____
+end
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+vvv
+
+### Jeux (suite) 🎮
+
+#### 👉 Autoriser l'accès grâce à un mot de passe
+
+```ruby
+# Solution
+def grant_access(given_password)
+  real_password = "Unicorn42"
+  if given_password = real_password
+    puts "Accès autorisé"
+  else
+    puts "Accès refusé"
+  end
+end
+```
 
 ---
 
