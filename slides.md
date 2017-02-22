@@ -279,6 +279,19 @@ notes: Un objet est une entité qui contient des informations et des mécanismes
 vvv
 
 #### 👉 Afficher les résultats de la table de 7
+```ruby
+# Expected result:
+7
+14
+21
+28
+35
+42
+49
+56
+63
+70
+```
 
 ```ruby
 # Solution
@@ -291,8 +304,25 @@ end
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-#### 👉 Afficher les résultats de la table de n'importe quelle table ?
-<!-- .element: class="fragment" data-fragment-index="2" -->
+vvv
+
+#### 👉 Afficher les résultats de n'importe quelle table
+
+```ruby
+# Expected result:
+multiplication_table(7)       multiplication_table(8)
+7                             8
+14                            16
+21                            24
+28                            32
+35                            40
+42                            48
+49                            56
+56                            64
+63                            72
+70                            80
+```
+
 
 ```ruby
 # Solution
@@ -304,14 +334,15 @@ def multiplication_table(number)
   end
 end
 ```
-<!-- .element: class="fragment" data-fragment-index="3" -->
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 vvv
 
 ### Jeux (suite) 🎮
 
-#### 👉 Autoriser l'accès grâce à un mot de passe
+#### 👉 Autoriser l'accès grâce au mot de passe "Unicorn42"
 ```ruby
+# Expected result:
 grant_access("123456")
 # => "Accès refusé"
 
@@ -336,7 +367,7 @@ vvv
 
 ### Jeux (suite) 🎮
 
-#### 👉 Autoriser l'accès grâce à un mot de passe
+#### 👉 Autoriser l'accès grâce au mot de passe "Unicorn42"
 
 ```ruby
 # Solution
