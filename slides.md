@@ -217,21 +217,42 @@ notes: Faire tourner les boucles au tableau
 
 ---
 
-## Paradigme 👴🏻☝
+## Paradigme Ruby 👴🏻☝
 
 &nbsp;
 
 "Tout est objet."
 
-notes: Mais qu'est-ce qu'un objet ?
+notes: Language orienté objets. Il existe des languages impéatifs, des langages fonctionnels...
 
 vvv
 
 ## Objet ?
 
-<!-- TODO -->
+# 🚗
 
-notes: Un objet est une entité à qui l'on peut apprendre à faire des choses.
+<table>
+    <theader>
+      <th>Caractéristiques</td>
+      <th>Comportements</td>
+    </theader>
+    <tr>
+        <td>Marque : `Simca`</td>
+        <td>`Démarrer`</td>
+    </tr>
+    <tr>
+        <td>Couleur : `rouge`</td>
+        <td>`Tourner à droite`</td>
+    </tr>
+    <tr>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+</table>
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+
+notes: Un objet est une entité qui contient des informations et des mécanismes concernant un sujet, manipulés dans un programme
 
 ---
 
@@ -242,6 +263,38 @@ notes: Un objet est une entité à qui l'on peut apprendre à faire des choses.
 🔗 https://coderpad.io/HC3RY7MA
 
 <!-- tutorialspoint.com : https://goo.gl/z9kDe6 -->
+
+vvv
+
+## Jeux 🎮
+
+#### 👉 Afficher les résultats de la table de 7
+
+```ruby
+# Solution
+counter = 1
+
+while counter < 11
+  puts counter * 7
+  counter = counter + 1
+end
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+#### 👉 Afficher les résultats de la table de n'importe quelle table ?
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+```ruby
+# Solution
+def mutiplication_table(number)
+  counter = 1
+  while counter < 11
+    puts counter * number
+    counter = counter + 1
+  end
+end
+```
+<!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
