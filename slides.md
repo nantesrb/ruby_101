@@ -272,7 +272,7 @@ notes: Un objet est une entité qui contient des informations et des mécanismes
 <!-- Use a new link for the free version -->
 🔗 https://coderpad.io/HC3RY7MA
 
-<!-- tutorialspoint.com : https://goo.gl/z9kDe6 -->
+<!-- https://www.tutorialspoint.com/execute_ruby_online.php -->
 
 vvv
 
@@ -296,7 +296,7 @@ end
 
 ```ruby
 # Solution
-def mutiplication_table(number)
+def multiplication_table(number)
   counter = 1
   while counter < 11
     puts counter * number
