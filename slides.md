@@ -269,14 +269,14 @@ notes: Un objet est une entité qui contient des informations et des mécanismes
 # LiveCode
 # ⌨
 
-<!-- Use a new link for the free version -->
-🔗 https://coderpad.io/HC3RY7MA
+---
 
+## Jeux 🎮
+
+🔗 http://tiny.cc/ruby
 <!-- https://www.tutorialspoint.com/execute_ruby_online.php -->
 
 vvv
-
-## Jeux 🎮
 
 #### 👉 Afficher les résultats de la table de 7
 
