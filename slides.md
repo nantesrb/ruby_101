@@ -9,6 +9,10 @@ Le Wagon apporte un savoir-faire technique aux esprits créatifs.
 # La programmation avec Ruby
 ## 🖥 ⌨ 🤓
 
+notes:
+- Présentation et commandes de bases
+- LiveCode
+- Jeux
 
 ---
 
@@ -23,6 +27,9 @@ Le Wagon apporte un savoir-faire technique aux esprits créatifs.
 > Sa syntaxe élégante en facilite la lecture et l'écriture.
 
 ## 👌
+
+notes:
+Yukihiro « Matz » Matsumoto est le créateur de Ruby. Frustré par son expérience en développement Smalltalk et Lisp, il débute la conception d'un nouveau langage en 1993 sous Emacs, puis publie une première version en 1995.
 
 vvv
 
