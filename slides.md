@@ -14,9 +14,13 @@ Le Wagon apporte un savoir-faire technique aux esprits créatifs.
 
 ## Pourquoi Ruby ? 🤔
 
-> A dynamic, open source programming language with a focus on simplicity and productivity.
+<!-- > A dynamic, open source programming language with a focus on simplicity and productivity.
 
-> It has an elegant syntax that is natural to read and easy to write.
+> It has an elegant syntax that is natural to read and easy to write. -->
+
+> Un langage open-source dynamique qui met l'accent sur la simplicité et la productivité.
+
+> Sa syntaxe élégante en facilite la lecture et l'écriture.
 
 ## 👌
 
@@ -59,7 +63,7 @@ puts "Bonjour Nantes !"
 
 <table>
     <tr>
-        <td>`"Double rainbow 🌈🌈"`</td>
+        <td>`"Double arc-en-ciel 🌈🌈"`</td>
         <td>_**String**_</td>
         <!-- .element: class="fragment" data-fragment-index="2" -->
     </tr>
@@ -74,7 +78,7 @@ puts "Bonjour Nantes !"
         <!-- .element: class="fragment" data-fragment-index="4" -->
     </tr>
     <tr>
-        <td>`["Unicorn 🦄", "Kitten 🐈", "Bug 🐛"]`</td>
+        <td>`["Licorne 🦄", "Chaton 🐈", "Insecte 🐛"]`</td>
         <td>_**Array**_</td>
         <!-- .element: class="fragment" data-fragment-index="5" -->
     </tr>
@@ -145,7 +149,7 @@ def greetings(name)
   puts "Bonjour " + name
 end
 
-greetings("Bob")
+greetings("Pierre")
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -158,22 +162,22 @@ vvv
 ## Conditions ✅ ❎
 
 ```ruby
-weather = "It's raining"
+weather = "Il pleut"
 
-if weather == "It's raining"
-  puts "Take your umbrella 🌂"
+if weather == "Il pleut"
+  puts "Prenez votre parapluie 🌂"
 end
 ```
 
 &nbsp;
 
 ```ruby
-weather = "It's sunny"
+weather = "Il fait beau"
 
-if weather == "It's raining"
-  puts "Take your umbrella 🌂"
+if weather == "Il pleut"
+  puts "Prenez votre parapluie 🌂"
 else
-  puts "You might want take your sunglasses 😎"
+  puts "Pensez à vos lunettes de soleil 😎"
 end
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -340,20 +344,20 @@ vvv
 
 ### Jeux (suite) 🎮
 
-#### 👉 Autoriser l'accès grâce au mot de passe "Unicorn42"
+#### 👉 Autoriser l'accès grâce au mot de passe "Licorne42"
 ```ruby
 # Expected result:
 grant_access("123456")
 # => "Accès refusé"
 
-grant_access("Unicorn42")
+grant_access("Licorne42")
 # => "Accès autorisé"
 ```
 
 ```ruby
 # Indice
 def grant_access(given_password)
-  real_password = "Unicorn42"
+  real_password = "Licorne42"
   ____
     puts "Accès autorisé"
   ____
@@ -367,12 +371,12 @@ vvv
 
 ### Jeux (suite) 🎮
 
-#### 👉 Autoriser l'accès grâce au mot de passe "Unicorn42"
+#### 👉 Autoriser l'accès grâce au mot de passe "Licorne42"
 
 ```ruby
 # Solution
 def grant_access(given_password)
-  real_password = "Unicorn42"
+  real_password = "Licorne42"
   if given_password = real_password
     puts "Accès autorisé"
   else
