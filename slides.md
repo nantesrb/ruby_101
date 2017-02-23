@@ -70,7 +70,7 @@ puts "Bonjour Nantes !"
 
 <table>
     <tr>
-        <td>`"Double arc-en-ciel 🌈🌈"`</td>
+        <td>`"Double arc-en-ciel"`</td>
         <td>_**String**_</td>
         <!-- .element: class="fragment" data-fragment-index="2" -->
     </tr>
@@ -85,7 +85,7 @@ puts "Bonjour Nantes !"
         <!-- .element: class="fragment" data-fragment-index="4" -->
     </tr>
     <tr>
-        <td>`["Licorne 🦄", "Chaton 🐈", "Insecte 🐛"]`</td>
+        <td>`["Licorne", "Chaton", "Insecte"]`</td>
         <td>_**Array**_</td>
         <!-- .element: class="fragment" data-fragment-index="5" -->
     </tr>
