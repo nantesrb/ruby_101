@@ -231,7 +231,7 @@ vvv
 #### For
 
 ```ruby
-for number in [1..10]
+for number in 1..10
   puts number
 end
 ```
@@ -364,7 +364,7 @@ grant_access("Licorne42")
 ```ruby
 # Indice
 def grant_access(given_password)
-  real_password = "Licorne42"
+  real_password == "Licorne42"
   ____
     puts "Accès autorisé"
   ____
