@@ -344,6 +344,8 @@ def multiplication_table(number)
     counter = counter + 1
   end
 end
+multiplication_table(7)
+multiplication_table(8)
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -364,13 +366,15 @@ grant_access("Licorne42")
 ```ruby
 # Indice
 def grant_access(given_password)
-  real_password == "Licorne42"
+  real_password = "Licorne42"
   ____
-    puts "Accès autorisé"
+    puts "___"
   ____
-    puts "Accès refusé"
+    puts "___"
   ____
 end
+grant_access("123456")
+grant_access("Licorne42")
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -384,12 +388,14 @@ vvv
 # Solution
 def grant_access(given_password)
   real_password = "Licorne42"
-  if given_password = real_password
+  if given_password == real_password
     puts "Accès autorisé"
   else
     puts "Accès refusé"
   end
 end
+grant_access("123456")
+grant_access("Licorne42")
 ```
 
 ---
