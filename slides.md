@@ -272,7 +272,6 @@ vvv
 </table>
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
-
 notes: Un objet est une entité qui contient des informations et des mécanismes concernant un sujet, manipulés dans un programme
 
 ---
@@ -280,12 +279,22 @@ notes: Un objet est une entité qui contient des informations et des mécanismes
 # LiveCode
 # ⌨
 
+notes:
+```ruby
+# TODO
+# - Le programme choisi un nombre entre 1 et 50
+#   et demande à l'utilisateur de renseigner un nombre entre 1 et 50
+#
+# - Si l'utilisateur trouve le bon 'prix', il gagne
+#   Sinon le programme l'aide en lui disant '+' ou '-'
+```
+
 ---
 
 ## Jeux 🎮
 
-🔗 http://tiny.cc/ruby
-<!-- https://www.tutorialspoint.com/execute_ruby_online.php -->
+🔗 http://tiny.cc/ruby_101
+<!-- https://repl.it/languages/ruby -->
 
 vvv
 
@@ -367,11 +376,11 @@ grant_access("Licorne42")
 # Indice
 def grant_access(given_password)
   real_password = "Licorne42"
-  ____
-    puts "___"
-  ____
-    puts "___"
-  ____
+  # ...?
+    puts "...?"
+  # ...?
+    puts "...?"
+  # ...?
 end
 grant_access("123456")
 grant_access("Licorne42")
