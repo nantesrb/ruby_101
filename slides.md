@@ -1,11 +1,3 @@
-<!-- .slide: data-background-image="images/le_wagon.png" -->
-
-notes:
-### Présentation du Wagon :
-Le Wagon apporte un savoir-faire technique aux esprits créatifs.
-
----
-
 # La programmation avec Ruby
 ## 🖥 ⌨ 🤓
 
@@ -419,7 +411,3 @@ vvv
 &nbsp;
 
 🔗 https://github.com/guillaumecabanel/ruby_101
-
----
-
-<!-- .slide: data-background-image="images/le_wagon.png" -->
