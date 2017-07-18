@@ -162,7 +162,7 @@ notes: ⚠ Tout est vrai sauf _false_ ou _nil_
 
 vvv
 
-## Opérateurs logiques
+## Opérateurs logiques ☯️
 #### Logical AND
 ```ruby
 result = a && b
@@ -208,6 +208,7 @@ end
 
 vvv
 
+### Opérateurs logiques (suite)
 #### Logical OR
 ```ruby
 result = a || b
@@ -252,6 +253,7 @@ end
 
 vvv
 
+### Opérateurs logiques (suite)
 #### Logical NOT
 ```ruby
 result = !a
