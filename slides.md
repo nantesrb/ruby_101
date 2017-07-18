@@ -131,31 +131,6 @@ notes:
 
 ---
 
-## Méthodes 🏭
-
-&nbsp;
-
-Arranger la logique par _boite noire_
-```ruby
-def hello_world
-  puts "Bonjour tout le monde !"
-end
-
-hello_world
-```
-
-
-```ruby
-def greetings(name)
-  puts "Bonjour " + name
-end
-
-greetings("Pierre")
-```
-<!-- .element: class="fragment" data-fragment-index="1" -->
-
----
-
 ## Les commandes de base 🛠
 
 vvv
@@ -229,6 +204,31 @@ for number in 1..10
   puts number
 end
 ```
+
+---
+
+## Méthodes 🏭
+
+&nbsp;
+
+Arranger la logique par _boite noire_
+```ruby
+def hello_world
+  puts "Bonjour tout le monde !"
+end
+
+hello_world
+```
+
+
+```ruby
+def greetings(name)
+  puts "Bonjour " + name
+end
+
+greetings("Pierre")
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
