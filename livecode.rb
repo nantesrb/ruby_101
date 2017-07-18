@@ -26,3 +26,5 @@ while the_right_price != user_price
   user_price = ask_a_price
   test_price(the_right_price, user_price)
 end
+
+
