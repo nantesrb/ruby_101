@@ -34,6 +34,7 @@ Framework pour applications web
 ![GitHub](images/github.png)
 ![AirBnB](images/airbnb.png)
 ![SoundCloud](images/soundcloud.png)
+![Product Hunt](images/producthunt.png)
 ![Twitch](images/twitch.png)
 ![ZenDesk](images/zendesk.png)
 
@@ -43,6 +44,7 @@ notes:
 - GitHub
 - AirBnB
 - SoundCloud
+- Product Hunt
 - Twitch
 - ZenDesk
 
