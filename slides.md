@@ -1,11 +1,3 @@
-<!-- .slide: data-background-image="images/le_wagon.png" -->
-
-notes:
-### Présentation du Wagon :
-Le Wagon apporte un savoir-faire technique aux esprits créatifs.
-
----
-
 # La programmation avec Ruby
 ## 🖥 ⌨ 🤓
 
@@ -42,6 +34,7 @@ Framework pour applications web
 ![GitHub](images/github.png)
 ![AirBnB](images/airbnb.png)
 ![SoundCloud](images/soundcloud.png)
+![Product Hunt](images/producthunt.png)
 ![Twitch](images/twitch.png)
 ![ZenDesk](images/zendesk.png)
 
@@ -51,6 +44,7 @@ notes:
 - GitHub
 - AirBnB
 - SoundCloud
+- Product Hunt
 - Twitch
 - ZenDesk
 
@@ -137,32 +131,7 @@ notes:
 
 ---
 
-## Méthodes 🏭
-
-&nbsp;
-
-Arranger la logique par _boite noire_
-```ruby
-def hello_world
-  puts "Bonjour tout le monde !"
-end
-
-hello_world
-```
-
-
-```ruby
-def greetings(name)
-  puts "Bonjour " + name
-end
-
-greetings("Pierre")
-```
-<!-- .element: class="fragment" data-fragment-index="1" -->
-
----
-
-## Les commandes de base 🛠
+## Les fondamentaux 🛠
 
 vvv
 
@@ -190,6 +159,127 @@ end
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 notes: ⚠ Tout est vrai sauf _false_ ou _nil_
+
+vvv
+
+## Opérateurs logiques
+#### Logical AND
+```ruby
+result = a && b
+```
+
+<table>
+    <thead>
+      <tr>
+        <td>a</td>
+        <td>b</td>
+        <td>**result**</td>
+      </tr>
+    </thead>
+    <tr>
+        <td>false</td>
+        <td>false</td>
+        <td>_**false**_</td>
+    </tr>
+    <tr>
+        <td>true</td>
+        <td>false</td>
+        <td>_**false**_</td>
+    </tr>
+    <tr>
+        <td>false</td>
+        <td>true</td>
+        <td>_**false**_</td>
+    </tr>
+    <tr>
+        <td>true</td>
+        <td>true</td>
+        <td style="color: red">_**true**_</td>
+    </tr>
+</table>
+
+notes:
+rain = true
+wind = true
+
+if rain && wind
+  puts "Restez à la maison !"
+end
+
+vvv
+
+#### Logical OR
+```ruby
+result = a || b
+```
+
+<table>
+    <thead>
+      <tr>
+        <td>a</td>
+        <td>b</td>
+        <td>**result**</td>
+      </tr>
+    </thead>
+    <tr>
+        <td>false</td>
+        <td>false</td>
+        <td>_**false**_</td>
+    </tr>
+    <tr>
+        <td>true</td>
+        <td>false</td>
+        <td style="color: red">_**true**_</td>
+    </tr>
+    <tr>
+        <td>false</td>
+        <td>true</td>
+        <td style="color: red">_**true**_</td>
+    </tr>
+    <tr>
+        <td>true</td>
+        <td>true</td>
+        <td style="color: red">_**true**_</td>
+    </tr>
+</table>
+
+notes:
+day = "Saturday"
+
+if day == "Saturday" || day == "Sunday"
+  puts "C'est le week end !"
+end
+
+vvv
+
+#### Logical NOT
+```ruby
+result = !a
+```
+
+<table>
+    <thead>
+      <tr>
+        <td>a</td>
+        <td>**result**</td>
+      </tr>
+    </thead>
+    <tr>
+        <td>false</td>
+        <td>_**true**_</td>
+    </tr>
+    <tr>
+        <td>true</td>
+        <td style="color: red">_**false**_</td>
+    </tr>
+</table>
+
+notes:
+sunny = true
+
+if !sunny
+  puts "Bon finalement, on va pas à la mer"
+end
 
 vvv
 
@@ -223,6 +313,14 @@ puts counter
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 notes: Faire tourner les boucles au tableau
+exercice multiplication
+```ruby
+counter = 1
+while counter < 11
+  puts counter * 7
+  counter = counter + 1
+end
+```
 
 vvv
 
@@ -238,13 +336,38 @@ end
 
 ---
 
+## Méthodes 🏭
+
+&nbsp;
+
+Arranger la logique par _boite noire_
+```ruby
+def hello_world
+  puts "Bonjour tout le monde !"
+end
+
+hello_world
+```
+
+
+```ruby
+def greetings(name)
+  puts "Bonjour " + name
+end
+
+greetings("Pierre")
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+---
+
 ## Paradigme Ruby 👴🏻☝
 
 &nbsp;
 
 "Tout est objet."
 
-notes: Language orienté objets. Il existe des languages impéatifs, des langages fonctionnels...
+notes: Language orienté objets. Il existe des languages impératifs, des langages fonctionnels...
 
 vvv
 
@@ -298,69 +421,7 @@ notes:
 
 vvv
 
-#### 👉 Afficher les résultats de la table de 7
-```ruby
-# Expected result:
-7
-14
-21
-28
-35
-42
-49
-56
-63
-70
-```
-
-```ruby
-# Solution
-counter = 1
-
-while counter < 11
-  puts counter * 7
-  counter = counter + 1
-end
-```
-<!-- .element: class="fragment" data-fragment-index="1" -->
-
-vvv
-
-#### 👉 Afficher les résultats de n'importe quelle table
-
-```ruby
-# Expected result:
-multiplication_table(7)       multiplication_table(8)
-7                             8
-14                            16
-21                            24
-28                            32
-35                            40
-42                            48
-49                            56
-56                            64
-63                            72
-70                            80
-```
-
-
-```ruby
-# Solution
-def multiplication_table(number)
-  counter = 1
-  while counter < 11
-    puts counter * number
-    counter = counter + 1
-  end
-end
-multiplication_table(7)
-multiplication_table(8)
-```
-<!-- .element: class="fragment" data-fragment-index="1" -->
-
-vvv
-
-### Jeux (suite) 🎮
+### Jeux 🎮
 
 #### 👉 Autoriser l'accès grâce au mot de passe "Licorne42"
 ```ruby
@@ -368,14 +429,14 @@ vvv
 grant_access("123456")
 # => "Accès refusé"
 
-grant_access("Licorne42")
-# => "Accès autorisé"
+grant_access("LeWagon")
+# => "Bienvenue, vous allez changer de vie"
 ```
 
 ```ruby
 # Indice
 def grant_access(given_password)
-  real_password = "Licorne42"
+  real_password = "LeWagon"
   # ...?
     puts "...?"
   # ...?
@@ -383,7 +444,7 @@ def grant_access(given_password)
   # ...?
 end
 grant_access("123456")
-grant_access("Licorne42")
+grant_access("LeWagon")
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -391,20 +452,68 @@ vvv
 
 ### Jeux (suite) 🎮
 
-#### 👉 Autoriser l'accès grâce au mot de passe "Licorne42"
+#### 👉 Autoriser l'accès grâce au mot de passe "LeWagon"
 
 ```ruby
 # Solution
 def grant_access(given_password)
-  real_password = "Licorne42"
+  real_password = "LeWagon"
   if given_password == real_password
-    puts "Accès autorisé"
+    puts "Bienvenue, vous allez changer de vie"
   else
     puts "Accès refusé"
   end
 end
 grant_access("123456")
-grant_access("Licorne42")
+grant_access("LeWagon")
+```
+
+vvv
+
+#### 👉 FizzBuzz
+<div style="font-size: 16px;">
+  Write a program that prints the numbers from 1 to 15.But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”
+</div>
+
+
+###### Expected result:
+
+```ruby
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+10
+11
+Fizz
+13
+14
+FizzBuzz
+```
+
+vvv
+
+#### 👉 Solution
+
+```ruby
+counter = 1
+
+while counter < 16
+  if counter % 5 == 0 && counter % 3 == 0
+    puts "FizzBuzz"
+  elsif counter % 5 == 0
+    puts "Buzz"
+  elsif counter % 3 == 0
+    puts "Fizz"
+  else puts counter
+  end
+  counter = counter + 1
+end
 ```
 
 ---
@@ -418,8 +527,4 @@ vvv
 
 &nbsp;
 
-🔗 https://github.com/guillaumecabanel/ruby_101
-
----
-
-<!-- .slide: data-background-image="images/le_wagon.png" -->
+🔗 https://github.com/nantesrb/ruby_101
