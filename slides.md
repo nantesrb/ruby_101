@@ -426,7 +426,7 @@ vvv
 
 ### Jeux 🎮
 
-#### 👉 Autoriser l'accès grâce au mot de passe "Licorne42"
+#### 👉 Autoriser l'accès grâce au mot de passe "LeWagon"
 ```ruby
 # Expected result:
 grant_access("123456")
