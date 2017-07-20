@@ -287,6 +287,19 @@ vvv
 
 ## Boucles 🔁
 
+#### For
+
+```ruby
+for number in 1..10
+  puts number
+end
+```
+
+vvv
+
+
+### Boucles (suite) 🔁
+
 #### While
 
 ```ruby
@@ -321,18 +334,6 @@ counter = 1
 while counter < 11
   puts counter * 7
   counter = counter + 1
-end
-```
-
-vvv
-
-### Boucles (suite) 🔁
-
-#### For
-
-```ruby
-for number in 1..10
-  puts number
 end
 ```
 
