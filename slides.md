@@ -491,7 +491,7 @@ Fizz
 7
 8
 Fizz
-10
+Buzz
 11
 Fizz
 13
