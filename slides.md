@@ -341,7 +341,7 @@ vvv
 
 ### Boucles (fin) 🔁
 
-#### each
+#### .each
 
 ```ruby
 students = ["sarah", "guillaume", "maël", "marine", "pierre", "camille"]
