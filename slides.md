@@ -336,6 +336,20 @@ while counter < 11
   counter = counter + 1
 end
 ```
+vvv
+
+
+### Boucles (fin) 🔁
+
+#### each
+
+```ruby
+students = ["sarah", "guillaume", "maël", "marine", "pierre", "camille"]
+
+students.each do |student|
+  puts student.capitalize
+end
+```
 
 ---
 
