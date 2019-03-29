@@ -99,6 +99,47 @@ puts "Bonjour Nantes !"
 Et quelques autres...
 <!-- .element: class="fragment" data-fragment-index="8" -->
 
+vvv
+
+### Le hash 📔
+
+```ruby
+student = {
+  "first_name" => "Nicolas",
+  "age"        => 27,
+}
+```
+
+<p>Un hash est une collection de paire **clé/valeur**</p>
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+```ruby
+{
+  "key"       => "value",
+  "other_key" => "other value"
+}
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+vvv
+
+### Le hash 📔 (suite)
+
+#### Accès à une valeur 🔍
+
+```ruby
+student = {
+  "first_name" => "Nicolas",
+  "age"        => 27,
+}
+```
+
+```ruby
+puts student["first_name"]
+
+# => Nicolas
+```
+
 ---
 
 ## Variables 🎁
@@ -485,7 +526,7 @@ grant_access("LeWagon")
 
 vvv
 
-### Comment afficher des tweets ?
+### Comment afficher un tweet ?
 
 ![Tweet](images/tweet.png)
 <!-- .element: class="is-big" -->
@@ -503,50 +544,9 @@ vvv
 
 vvv
 
-### Le hash 📔
+### Comment afficher un tweet ? (suite)
 
-```ruby
-tweet = {
-  "author"  => "Le Wagon Nantes et Rennes",
-  "content" => "1 journée à la découverte du code. [...]",
-  "date"    => "12:39 PM - 29 Mar 2019"
-}
-```
-
-<p>Un hash est une collection de paire **clé/valeur**</p>
-<!-- .element: class="fragment" data-fragment-index="1" -->
-
-```ruby
-{
-  "key"       => value,
-  "other_key" => other_value
-}
-```
-<!-- .element: class="fragment" data-fragment-index="2" -->
-
-vvv
-
-### Hash
-
-#### Accès à une valeur 🔍
-
-```ruby
-tweet = {
-  "author"  => "Le Wagon Nantes et Rennes",
-  "content" => "1 journée à la découverte du code. [...]",
-  "date"    => "12:39 PM - 29 Mar 2019"
-}
-```
-
-```ruby
-puts tweet["author"]
-
-# => Le Wagon Nantes et Rennes
-```
-
-vvv
-
-### Afficher les détails d'un tweet 🐦
+Le hash 📔 !
 
 ```ruby
 tweet = {
@@ -556,13 +556,18 @@ tweet = {
 }
 ```
 
-```ruby
-# [RESULTAT ATTENDU]
-# Le Wagon Nantes et Rennes - 21 Mars
-# > Le Wagon s'installe à Rennes 🤩
-# ---
+Résultat attendu 🖥
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+```html
+Le Wagon Nantes et Rennes - 21 Mars
+> Le Wagon s'installe à Rennes 🤩
+---
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
+
+Code ⌨
+<!-- .element: class="fragment" data-fragment-index="2" -->
 
 ```ruby
 puts tweet["author"] + ' - ' + tweet["date"]
@@ -574,6 +579,17 @@ puts '---'
 vvv
 
 ### Afficher plusieurs tweets 🐦🐦🐦
+
+Comment ? 🤔
+
+<p>
+<span>Un `array`</span>
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+<span>de `hashes`</span>
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+</p>
 
 ```ruby
 
@@ -595,25 +611,29 @@ tweets = [
   }
 ]
 ```
-<!-- .element: class="smaller-text" -->
-
-```ruby
-# [RESULTAT ATTENDU]
-# Le Wagon Nantes et Rennes - 21 mars
-# > Le Wagon s'installe à Rennes 🤩
-# ---
-# Le Wagon Paris - 21 mars
-# > Aujourd'hui, on lance officiellement Le Wagon Executive 😍
-# ---
-# Kom&Do - 21 mars
-# > 🚃 #Event ⎜Vous avez toujours rêvé d'apprendre à #coder ?
-# ---
-```
-<!-- .element: class="smaller-text fragment" data-fragment-index="1" -->
+<!-- .element: class="smaller-text fragment" data-fragment-index="3" -->
 
 vvv
 
 ### Afficher plusieurs tweets 🐦🐦🐦
+
+Résultat attendu 🖥
+
+```html
+Le Wagon Nantes et Rennes - 21 mars
+> Le Wagon s'installe à Rennes 🤩
+---
+Le Wagon Paris - 21 mars
+> Aujourd'hui, on lance officiellement Le Wagon Executive 😍
+---
+Kom&Do - 21 mars
+> 🚃 #Event ⎜Vous avez toujours rêvé d'apprendre à #coder ?
+---
+```
+<!-- .element: class="smaller-text" -->
+
+Code ⌨
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```ruby
 for tweet in tweets # OU tweets.each do |tweet|
@@ -622,6 +642,7 @@ for tweet in tweets # OU tweets.each do |tweet|
   puts '---'
 end
 ```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 ---
 
