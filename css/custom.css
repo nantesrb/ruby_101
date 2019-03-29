@@ -29,3 +29,14 @@ td{
 .smaller-text{
   font-size: 16px !important;
 }
+
+.custom-bg {
+  background-image: url('/images/le_wagon_bg.png');
+  background-color: #ffffff !important;
+  background-position: bottom !important;
+  background-size: contain !important;
+}
+
+.has-light-background {
+  background: none !important;
+}
