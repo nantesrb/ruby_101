@@ -580,6 +580,13 @@ vvv
 
 ### Afficher plusieurs tweets 🐦🐦🐦
 
+![Tweet](images/tweets.png)
+<!-- .element: class="is-big" -->
+
+vvv
+
+### Afficher plusieurs tweets 🐦🐦🐦
+
 Comment ? 🤔
 
 <p>
