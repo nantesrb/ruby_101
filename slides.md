@@ -451,27 +451,6 @@ grant_access("LeWagon")
 ```
 
 ```ruby
-# Indice
-def grant_access(given_password)
-  real_password = "LeWagon"
-  # ...?
-    puts "...?"
-  # ...?
-    puts "...?"
-  # ...?
-end
-grant_access("123456")
-grant_access("LeWagon")
-```
-<!-- .element: class="fragment" data-fragment-index="1" -->
-
-vvv
-
-### Jeux (suite) 🎮
-
-#### 👉 Autoriser l'accès grâce au mot de passe "LeWagon"
-
-```ruby
 # Indice et Pseudocode
 def grant_access(given_password)
   real_password = "LeWagon"
@@ -481,8 +460,8 @@ def grant_access(given_password)
     puts "...?" # j'affiche le message d'accès refusé
   # fin
 end
-
 ```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 vvv
 

@@ -4,8 +4,8 @@ img{
 }
 
 img.is-big {
-  max-width: 50vw;
-  max-height: 50vh;
+  max-width: 40vw;
+  max-height: 40vh;
   width: auto;
   height: auto;
 }
