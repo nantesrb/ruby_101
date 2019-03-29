@@ -70,7 +70,7 @@ puts "Bonjour Nantes !"
     </tr>
     <tr>
         <td>`42`</td>
-        <td>_**Fixnum**_</td>
+        <td>_**Integer**_</td>
         <!-- .element: class="fragment" data-fragment-index="3" -->
     </tr>
     <tr>
@@ -106,12 +106,12 @@ Et quelques autres...
 &nbsp;
 
 ```ruby
-year = 2017
+year = 2019
 puts year
 ```
 
 👉<!-- .element: class="fragment" data-fragment-index="1" -->
-`2017`<!-- .element: class="fragment" data-fragment-index="1" -->
+`2019`<!-- .element: class="fragment" data-fragment-index="1" -->
 
 &nbsp;
 
@@ -125,7 +125,7 @@ puts year
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 👉<!-- .element: class="fragment" data-fragment-index="3" -->
-`2018`<!-- .element: class="fragment" data-fragment-index="3" -->
+`2020`<!-- .element: class="fragment" data-fragment-index="3" -->
 
 notes:
 
@@ -385,6 +385,25 @@ vvv
 
 ### Jeux (suite) 🎮
 
+#### Pseudocode
+
+```ruby
+# Indice
+def grant_access(given_password)
+  real_password = "Licorne42"
+  # Si le mot de passe donné est même que le bon mot de passe :
+    puts "...?" # j'affiche le message d'accès autorisé
+  # sinon
+    puts "...?" # j'affiche le message d'accès refusé
+  # fin
+end
+
+```
+
+vvv
+
+### Jeux (solution) 🎮
+
 #### 👉 Autoriser l'accès grâce au mot de passe "Licorne42"
 
 ```ruby
@@ -399,6 +418,146 @@ def grant_access(given_password)
 end
 grant_access("123456")
 grant_access("Licorne42")
+```
+
+vvv
+
+### Comment afficher des tweets ?
+
+![Tweet](images/tweet.png)
+<!-- .element: class="is-big" -->
+
+<table>
+    <tr>
+        <td>`author`</td>
+        <!-- .element: class="fragment" data-fragment-index="1" -->
+        <td>`content`</td>
+        <!-- .element: class="fragment" data-fragment-index="2" -->
+        <td>`date`</td>
+        <!-- .element: class="fragment" data-fragment-index="3" -->
+    </tr>
+</table>
+
+vvv
+
+### Le hash 📔
+
+```ruby
+tweet = {
+  "author"  => "Le Wagon Nantes et Rennes",
+  "content" => "1 journée à la découverte du code. [...]",
+  "date"    => "12:39 PM - 29 Mar 2019"
+}
+```
+
+<p>Un hash est une collection de paire **clé/valeur**</p>
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+```ruby
+{
+  "key"       => value,
+  "other_key" => other_value
+}
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+vvv
+
+### Hash
+
+#### Accès à une valeur 🔍
+
+```ruby
+tweet = {
+  "author"  => "Le Wagon Nantes et Rennes",
+  "content" => "1 journée à la découverte du code. [...]",
+  "date"    => "12:39 PM - 29 Mar 2019"
+}
+```
+
+```ruby
+puts tweet["author"]
+
+# => Le Wagon Nantes et Rennes
+```
+
+vvv
+
+### Afficher les détails d'un tweet 🐦
+
+```ruby
+tweet = {
+  "author"  => "Le Wagon Nantes et Rennes",
+  "content" => "Le Wagon s'installe à Rennes 🤩",
+  "date"    => "21 Mars"
+}
+```
+
+```ruby
+# [RESULTAT ATTENDU]
+# Le Wagon Nantes et Rennes - 21 Mars
+# > Le Wagon s'installe à Rennes 🤩
+# ---
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+```ruby
+puts tweet["author"] + ' - ' + tweet["date"]
+puts '> ' + tweet["content"]
+puts '---'
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+vvv
+
+### Afficher plusieurs tweets 🐦🐦🐦
+
+```ruby
+
+tweets = [
+  {
+    "author"  => "Le Wagon Nantes et Rennes",
+    "content" => "Le Wagon s'installe à Rennes 🤩",
+    "date"    => "21 mars"
+  },
+  {
+    "author"  => "Le Wagon Paris",
+    "content" => "Aujourd'hui, on lance officiellement Le Wagon Executive 😍",
+    "date"    => "21 mars"
+  },
+  {
+    "author"  => "Kom&Do",
+    "content" => "🚃 #Event ⎜Vous avez toujours rêvé d'apprendre à #coder ?",
+    "date"    => "21 mars"
+  }
+]
+```
+<!-- .element: class="smaller-text" -->
+
+```ruby
+# [RESULTAT ATTENDU]
+# Le Wagon Nantes et Rennes - 21 mars
+# > Le Wagon s'installe à Rennes 🤩
+# ---
+# Le Wagon Paris - 21 mars
+# > Aujourd'hui, on lance officiellement Le Wagon Executive 😍
+# ---
+# Kom&Do - 21 mars
+# > 🚃 #Event ⎜Vous avez toujours rêvé d'apprendre à #coder ?
+# ---
+```
+<!-- .element: class="smaller-text fragment" data-fragment-index="1" -->
+
+vvv
+
+### Afficher plusieurs tweets 🐦🐦🐦
+
+```ruby
+for tweet in tweets # OU tweets.each do |tweet|
+  puts tweet["author"] + ' - ' + tweet["date"]
+  puts '> ' + tweet["content"]
+  puts '---'
+end
 ```
 
 ---
