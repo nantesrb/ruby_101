@@ -55,7 +55,7 @@ notes:
 &nbsp;
 
 ```ruby
-puts "Bonjour Nantes !"
+puts "Bonjour Rennes !"
 ```
 
 ---
@@ -480,6 +480,43 @@ notes:
 vvv
 
 ### Jeux 🎮
+
+#### 👉 Découverte de l'environnement de dev
+```ruby
+# Expected result:
+sum(2, 5)
+# => 7
+
+sum(36, 6)
+# => 42
+```
+
+```ruby
+# Indice et Pseudocode
+def sum(a, b)
+  # sum a and b
+  # return result
+end
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
+
+vvv
+
+### Jeux (solution) 🎮
+
+#### 👉 Découverte de l'environnement de dev
+
+```ruby
+# Solution
+def sum(a, b)
+  c = a + b
+  return c
+end
+sum(2, 5)
+sum(36, 6)
+```
+
+vvv
 
 #### 👉 Autoriser l'accès grâce au mot de passe "LeWagon"
 ```ruby
