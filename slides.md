@@ -55,7 +55,7 @@ notes:
 &nbsp;
 
 ```ruby
-puts "Bonjour Rennes !"
+puts "Bonjour Rails Girls !"
 ```
 
 ---
@@ -120,25 +120,6 @@ student = {
 }
 ```
 <!-- .element: class="fragment" data-fragment-index="2" -->
-
-vvv
-
-### Le hash 📔 (suite)
-
-#### Accès à une valeur 🔍
-
-```ruby
-student = {
-  "first_name" => "Nicolas",
-  "age"        => 27,
-}
-```
-
-```ruby
-puts student["first_name"]
-
-# => Nicolas
-```
 
 ---
 
@@ -457,7 +438,7 @@ notes: Un objet est une entité qui contient des informations et des mécanismes
 
 ---
 
-# LiveCode
+<!-- # LiveCode
 # ⌨
 
 notes:
@@ -469,12 +450,12 @@ notes:
 # - Si l'utilisateur trouve le bon 'prix', il gagne
 #   Sinon le programme l'aide en lui disant '+' ou '-'
 ```
-
----
+ -->
+<!-- --- -->
 
 ## Jeux 🎮
 
-🔗 http://tiny.cc/ruby_101
+🔗 https://try.ruby-lang.org/
 <!-- https://repl.it/languages/ruby -->
 
 vvv
@@ -587,9 +568,9 @@ Le hash 📔 !
 
 ```ruby
 tweet = {
-  "author"  => "Le Wagon Nantes et Rennes",
-  "content" => "Le Wagon s'installe à Rennes 🤩",
-  "date"    => "21 Mars"
+  "author"  => "nantes.rb",
+  "content" => "RailsGirls c'est trop cool ! 🤩",
+  "date"    => "20 septembre"
 }
 ```
 
@@ -597,8 +578,8 @@ Résultat attendu 🖥
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```html
-Le Wagon Nantes et Rennes - 21 Mars
-> Le Wagon s'installe à Rennes 🤩
+nantes.rb - 20 20 septembre
+> RailsGirls c'est trop cool ! 🤩
 ---
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -639,19 +620,19 @@ Comment ? 🤔
 
 tweets = [
   {
-    "author"  => "Le Wagon Nantes et Rennes",
-    "content" => "Le Wagon s'installe à Rennes 🤩",
-    "date"    => "21 mars"
+    "author"  => "nantes.rb",
+    "content" => "RailsGirls c'est trop cool ! 🤩",
+    "date"    => "20 septembre"
   },
   {
-    "author"  => "Le Wagon Paris",
-    "content" => "Aujourd'hui, on lance officiellement Le Wagon Executive 😍",
-    "date"    => "21 mars"
+    "author"  => "Le Wagon Nantes & Rennes",
+    "content" => "Prochaine session le 14 octobre à Nantes 😍",
+    "date"    => "20 septembre"
   },
   {
-    "author"  => "Kom&Do",
-    "content" => "🚃 #Event ⎜Vous avez toujours rêvé d'apprendre à #coder ?",
-    "date"    => "21 mars"
+    "author"  => "Clever Cloud",
+    "content" => "Clever Cloud est fier de participer au Rails Gilrs de Nantes 🚀",
+    "date"    => "20 septembre"
   }
 ]
 ```
@@ -664,14 +645,14 @@ vvv
 Résultat attendu 🖥
 
 ```html
-Le Wagon Nantes et Rennes - 21 mars
-> Le Wagon s'installe à Rennes 🤩
+nantes.rb - 20 septembre
+> RailsGirls c'est trop cool ! 🤩
 ---
-Le Wagon Paris - 21 mars
+e Wagon Nantes & Rennes - 20 septembre
 > Aujourd'hui, on lance officiellement Le Wagon Executive 😍
 ---
-Kom&Do - 21 mars
-> 🚃 #Event ⎜Vous avez toujours rêvé d'apprendre à #coder ?
+Clever Cloud - 20 septembre
+> Clever Cloud est fier de participer au Rails Gilrs de Nantes 🚀
 ---
 ```
 <!-- .element: class="smaller-text" -->
