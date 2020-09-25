@@ -121,25 +121,6 @@ student = {
 ```
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
-vvv
-
-### Le hash 📔 (suite)
-
-#### Accès à une valeur 🔍
-
-```ruby
-student = {
-  "first_name" => "Nicolas",
-  "age"        => 27,
-}
-```
-
-```ruby
-puts student["first_name"]
-
-# => Nicolas
-```
-
 ---
 
 ## Variables 🎁
@@ -457,7 +438,7 @@ notes: Un objet est une entité qui contient des informations et des mécanismes
 
 ---
 
-# LiveCode
+<!-- # LiveCode
 # ⌨
 
 notes:
@@ -469,12 +450,12 @@ notes:
 # - Si l'utilisateur trouve le bon 'prix', il gagne
 #   Sinon le programme l'aide en lui disant '+' ou '-'
 ```
-
----
+ -->
+<!-- --- -->
 
 ## Jeux 🎮
 
-🔗 http://tiny.cc/ruby_101
+🔗 https://try.ruby-lang.org/
 <!-- https://repl.it/languages/ruby -->
 
 vvv
