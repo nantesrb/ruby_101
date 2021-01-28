@@ -55,7 +55,7 @@ notes:
 &nbsp;
 
 ```ruby
-puts "Bonjour Rails Girls !"
+puts "Hello Nantes !"
 ```
 
 ---
@@ -147,12 +147,12 @@ puts student["first_name"]
 &nbsp;
 
 ```ruby
-year = 2019
+year = 2020
 puts year
 ```
 
 👉<!-- .element: class="fragment" data-fragment-index="1" -->
-`2019`<!-- .element: class="fragment" data-fragment-index="1" -->
+`2020`<!-- .element: class="fragment" data-fragment-index="1" -->
 
 &nbsp;
 
@@ -166,7 +166,7 @@ puts year
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 👉<!-- .element: class="fragment" data-fragment-index="3" -->
-`2020`<!-- .element: class="fragment" data-fragment-index="3" -->
+`2021`<!-- .element: class="fragment" data-fragment-index="3" -->
 
 notes:
 
@@ -587,9 +587,9 @@ Le hash 📔 !
 
 ```ruby
 tweet = {
-  "author"  => "nantes.rb",
-  "content" => "RailsGirls c'est trop cool ! 🤩",
-  "date"    => "20 septembre"
+  "author"  => "Le Wagon Nantes",
+  "content" => "Ruby on Rails c'est trop cool ! 🤩",
+  "date"    => "29 janvier"
 }
 ```
 
@@ -597,8 +597,8 @@ Résultat attendu 🖥
 <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```html
-nantes.rb - 20 20 septembre
-> RailsGirls c'est trop cool ! 🤩
+Le Wagon Nantes - 29 janvier
+> Ruby on Rails c'est trop cool ! 🤩
 ---
 ```
 <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -639,20 +639,20 @@ Comment ? 🤔
 
 tweets = [
   {
-    "author"  => "nantes.rb",
-    "content" => "RailsGirls c'est trop cool ! 🤩",
-    "date"    => "20 septembre"
+    "author"  => "Le Wagon Nantes",
+    "content" => "Ruby on Rails c'est trop cool ! 🤩",
+    "date"    => "29 janvier"
   },
   {
     "author"  => "Le Wagon Nantes & Rennes",
-    "content" => "Prochaine session le 14 octobre à Nantes 😍",
-    "date"    => "20 septembre"
+    "content" => "Prochaine session le 5 juillet à Nantes 😍",
+    "date"    => "29 janvier"
   },
-  {
-    "author"  => "Clever Cloud",
-    "content" => "Clever Cloud est fier de participer au Rails Gilrs de Nantes 🚀",
-    "date"    => "20 septembre"
-  }
+   {
+    "author"  => "Le Wagon Nantes & Rennes",
+    "content" => "Prochaine session le 22 mars à Rennes 😍",
+    "date"    => "29 janvier"
+  },
 ]
 ```
 <!-- .element: class="smaller-text fragment" data-fragment-index="3" -->
@@ -664,14 +664,14 @@ vvv
 Résultat attendu 🖥
 
 ```html
-nantes.rb - 20 septembre
-> RailsGirls c'est trop cool ! 🤩
+Le Wagon Nantes & Rennes - 29 janvier
+> Ruby on Rails c'est trop cool ! 🤩
 ---
-e Wagon Nantes & Rennes - 20 septembre
-> Aujourd'hui, on lance officiellement Le Wagon Executive 😍
+Le Wagon Nantes & Rennes - 29 janvier
+> Prochaine session le 5 juillet à Nantes 😍
 ---
-Clever Cloud - 20 septembre
-> Clever Cloud est fier de participer au Rails Gilrs de Nantes 🚀
+Le Wagon Nantes & Rennes - 29 janvier
+> Prochaine session le 22 mars à Rennes 😍
 ---
 ```
 <!-- .element: class="smaller-text" -->
